@@ -23,13 +23,31 @@ if(numberA> numberB)
         }
 
 
-
-
-
 // Задача 4: Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
 // 2, 3, 7 -> 7
 // 44 5 78 -> 78
 // 22 3 9 -> 22
+
+System.Console.WriteLine("Введите первое число:  ");
+int numberC = Convert.ToInt32(Console.ReadLine());
+
+System.Console.WriteLine("Введите второе число:  ");
+int numberD = Convert.ToInt32(Console.ReadLine());
+
+System.Console.WriteLine("Введите третье  число:  ");
+int numberE = Convert.ToInt32(Console.ReadLine());
+
+int max = numberC;
+if(numberC<numberD)
+    max = numberD;
+    
+    else if (numberD<numberE)
+        {
+            max= numberE;
+            }
+
+System.Console.WriteLine("Наибольшее число: " + max);
+
 
 // Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
 // 4->да
