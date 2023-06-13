@@ -17,6 +17,12 @@ if(numberA> numberB)
         System.Console.WriteLine("Второе число больше: " + numberB);
 
     }
+    else if (numberA==numberB)
+    {
+        System.Console.WriteLine("Числа равны");
+        }
+
+
 
 
 
