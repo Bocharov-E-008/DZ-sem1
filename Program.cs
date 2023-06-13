@@ -54,18 +54,27 @@
 // - 3->нет
 // 7->нет
 
-System.Console.WriteLine("Введите число");
-int numberF = Convert.ToInt32(Console.ReadLine());
-if(numberF/2 == 0)
-    {
-        System.Console.WriteLine("Число четное");
-        }
+// System.Console.WriteLine("Введите число");
+// int numberF = Convert.ToInt32(Console.ReadLine());
+// if(numberF%2 == 0)
+//     {
+//         System.Console.WriteLine("Число четное");
+//         }
 
-else if(numberF/2 == 1)
-    {
-        System.Console.WriteLine("Число нечетное");
-        }
+// else if(numberF%2 == 1)
+//     {
+//         System.Console.WriteLine("Число нечетное");
+//         }
 
 // Задача 8: Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
 // 5 -> 2, 4
 // 8 -> 2, 4, 6, 8        
+
+
+System.Console.WriteLine("Введите число");
+int numberN = Convert.ToInt32(Console.ReadLine());
+for (int i = 1; i <= numberN; i++)
+{
+    if (i % 2 == 0)
+        System.Console.Write(i);
+}
